@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<h1>GPS ANDROID</h1>
+	<center><h1>GPS ANDROID</h1></center>
 <p>GPS itu Salah Satu Rangkaian Satelit Saja
 <P>GPS adalah nama yang umumnya. Akan tetapi, GPS atau Global Positioning System sebenarnya adalah sistem yang memungkinkan kita menentukan lokasi secara akurat menggunakan satelit, yang diciptakan oleh Amerika Serikat. Rusia (GLONASS) dan China (BeiDou) pun memiliki solusi penentu lokasi yang serupa.<p>
 
@@ -14,7 +14,7 @@
 <p>1.GPS, GLONASS (Globalnaya Navigazionnaya Sputnikovaya Sistema/Global Navigation Satellite System), BeiDou, dan sebagainya itu adalah satelitnya
 <p>2.Secara umum, semua satelit navigasi ini dinamakan GNSS (Global Navigation Satellite System).
 <p>Satelit GPS/GLONASS/BeiDou memancarkan sinyal. Anda bisa umpamakan mereka seperti stasiun pemancar radio FM dan smartphone sebagai radio penangkap siarannya. Setiap satelit akan memberikan data posisi dan waktu satelit tersebut mencapai posisi yang dikirimkan. Dengan “mendengarkan” laporan dari satelit-satelit tersebut, sistem navigasi di dalam smartphone dapat memperhitungkan di mana posisinya di muka bumi ini. Tentunya, dibutuhkan minimal sekitar 4 satelit untuk dapat mengetahui posisi dengan baik. Makin banyak satelit yang didengarkan, makin akurat pula hasil perhitungannya. Sebagai acuan, GPS dapat mencapai akurasi lokasi hingga radius 2 meter saja di permukaan bumi.</p>
-<h2>Bagaimana Cara Membaca GPS dan Menghitung Koordinat Latitude Longitude?</h2>
+	<center><h2>Bagaimana Cara Membaca GPS dan Menghitung Koordinat Latitude Longitude?</h2></center>
 
 <p>Angka koordinat lokasi bumi dibagi menjadi 3 format, koordinat di Google Maps berbeda dengan dengan koordinat di GPS (Global Positioning System). Namun pada beberapa GPS sudah mencantumkan ketiga jenis koordinat. 
 
@@ -34,6 +34,29 @@ Derajat. Digunakan untuk koordinat komputer. Paling sederhana dengan memasukan 2
 <p>Jika pada layar GPS tertera :  7°48’10.2″S , 110°22’26.9″E,artinya :
 <p>S (South / Lintang Selatan / Latitude) : 7 derajat 48 menit 10.2 detik
 E (Bujur / Longitude) : 110 derajat 22 menit 26.9  detik.<p>
+	
+	
+	<center> <h3> Menampilkan Peta Dengan Google Maps API Pada Android  Studio</h3> </center>
+<p>persiapan 
+<p>Beberapa hal yang perlu disiapkan antara lain :
+<p>1.	Android Studio.
+<p>2.	Perangkat android untuk uji coba aplikasi yang akan dibuat, pastikan perangkat terhubung dengan internet dan aktifkan akses lokasi.
+
+<P>Membuat Project Baru
+<P>1.	Buka Android Studio dan buat Project baru dangan nama "Peta", lalu klik next.
+<P>2.	Pilih versi SDK android minimal, disini dipilih Android 4.1, lalu klik next.
+<P>3.	Pada opsi "Add an Activity to mobile" pilih "Google maps activity", lalu klik next.
+<P>4.	Tinggalkan nama activity, lalu klik Finish.
+<P>Mendaftar Maps API
+<P>1.	Buka google_maps_api.xml pada package res/value, di google_maps_api.xml terdapat alamat untuk mengaktifkan Maps API, disini alamatnya adalah:
+Copy alamat tersebut lalu buka dalam browser, bila perlu daftarkan akun gmail untuk konfigurasi API.
+<P>2.	Setelah halama google API terbuka, pilih "Tidak" untuk opsi dapatkan email, dan pilih "Ya" untuk opsi setuju dengan Syarat dan ketentuan, lalu klik setuju dan lanjutkan.
+<P>3.	Setelah halaman "API diaktifkan" terbuka, klik buat kunci API.
+<P>4.	Setelah terbuka halaman "Kredensial" lalu muncul kotak dialog "Kunci API Dibuat" copy kode API key yang ada didalam box "Kunci API Anda".
+<P>5.	Buka kembali google_maps_api.xml pada package res/value di Android Studio, lalu masukan kode API key diantara string name="google_maps_key" templateMergeStrategy="preserve" translatable="false" dan </string>menggantikan text YOUR_KEY_HERE,
+<P>6. build apk.
+
+
 
 </body>
 </html>
